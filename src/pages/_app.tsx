@@ -1,20 +1,19 @@
 import App, { AppContext, AppInitialProps, AppProps } from 'next/app'
-import { ThemeProvider } from 'styled-components';
-import GlobalStyle from '@/styles/globals'; 
-import { theme } from '@/styles/theme';
+import { ChakraProvider } from "@chakra-ui/react"
 import { inter } from '@/app/fonts';
+
+import "@/styles/globals.css";
 
 export default function MyApp({
   Component,
   pageProps
 }: AppProps) {
   return (
-    <ThemeProvider theme={theme}>
+    <ChakraProvider>
       <main className={inter.className}>
-        <GlobalStyle />
         <Component {...pageProps} />
       </main>
-    </ThemeProvider>
+    </ChakraProvider>
   )
 }
  

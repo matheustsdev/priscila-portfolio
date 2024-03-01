@@ -1,14 +1,11 @@
-import { useState, useEffect } from "react";
-import Styled from "@/styles/pages";
+import { MenuLink } from "@/atoms/MenuLink";
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false)
-
-  useEffect(() => {console.log(isOpen)}, [isOpen]);
 
   return (
-   <Styled.HomeContainer>
-     <h1>Hello world!!</h1>
-   </Styled.HomeContainer>
+    <div>
+      <h1>Hello world</h1>
+      <MenuLink />
+    </div>
   )
 }

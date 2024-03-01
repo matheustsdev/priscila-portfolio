@@ -1,7 +1,5 @@
 "use client"
 
-import StyledComponentsRegistry from "@/lib/registry";
-
 export default function RootLayout({
   children,
 }: {
@@ -15,9 +13,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap" rel="stylesheet" />
       </head>
       <body>
-        <StyledComponentsRegistry>
-            {children}
-        </StyledComponentsRegistry>
+        {children}
       </body>
     </html>
   )
