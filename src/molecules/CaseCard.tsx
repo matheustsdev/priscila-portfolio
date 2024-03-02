@@ -1,13 +1,23 @@
-import { Card, CardFooter, Heading } from "@chakra-ui/react";
+import { Card, CardFooter, Heading, LinkBox, LinkOverlay } from "@chakra-ui/react";
 
-export const CaseCard: React.FC = () => {
+interface ICaseCardProps {
+    title: string;
+    imgSrc: string;
+    src: string;
+}
+
+export const CaseCard: React.FC<ICaseCardProps> = ({ title, imgSrc, src }) => {
     return (
-        <Card display="flex" justify="flex-end" w="600px" h="600px" backgroundImage="https://placehold.co/1000x1000" backgroundSize="cover">
-            <CardFooter>
-                <Heading as="h3" size="md">
-                    Título
-                </Heading>
-            </CardFooter>
-        </Card>
+        <LinkBox>
+            <LinkOverlay href={src}>
+                <Card display="flex" justify="flex-end" w="600px" h="600px" backgroundImage={imgSrc} backgroundSize="cover">
+                    <CardFooter>
+                        <Heading as="h3" size="md">
+                            {title}
+                        </Heading>
+                    </CardFooter>
+                </Card>
+            </LinkOverlay>
+        </LinkBox>
     );
 }

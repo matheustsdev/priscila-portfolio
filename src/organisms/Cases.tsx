@@ -2,6 +2,32 @@ import { CaseCard } from "@/molecules/CaseCard";
 import { Heading, Flex, Card, CardBody, Grid, GridItem } from "@chakra-ui/react";
 
 export const Cases = () => {
+
+    const caseCards = [{
+        id: "1",
+        title: "Design",
+        imgSrc: "https://images.unsplash.com/photo-1634013777228-6c9b5f3b4f1a",
+        src: "https://unsplash.com/photos/4Zd3Bz9eK6s"
+    },
+    {   
+        id: "2",
+        title: "Banner",
+        imgSrc: "https://images.unsplash.com/photo-1634013777228-6c9b5f3b4f1a",
+        src: "https://unsplash.com/photos/4Zd3Bz9eK6s"
+    },
+    {
+        id: "3",
+        title: "Folder",
+        imgSrc: "https://images.unsplash.com/photo-1634013777228-6c9b5f3b4f1a",
+        src: "https://unsplash.com/photos/4Zd3Bz9eK6s"
+    },
+    {
+        id: "4",
+        title: "Criação de logo",
+        imgSrc: "https://images.unsplash.com/photo-1634013777228-6c9b5f3b4f1a",
+        src: "https://unsplash.com/photos/4Zd3Bz9eK6s"
+    }];
+
     return (
         <Card display="flex" w="100%" bg="gray.800" color="white" direction="column" p="2rem 6rem" borderRadius="80px 80px 0 0">
             <CardBody>
@@ -10,24 +36,13 @@ export const Cases = () => {
                         Cases
                     </Heading>
                     <Grid templateColumns="repeat(2, 1fr)" gap="100px">
-                        <GridItem>
-                            <CaseCard />
-                        </GridItem>
-                        <GridItem>
-                            <CaseCard />
-                        </GridItem>
-                        <GridItem>
-                            <CaseCard />
-                        </GridItem>
-                        <GridItem>
-                            <CaseCard />
-                        </GridItem>
-                        <GridItem>
-                            <CaseCard />
-                        </GridItem>
-                        <GridItem>
-                            <CaseCard />
-                        </GridItem>
+                        {
+                            caseCards.map((card) => (
+                                <GridItem key={card.id}>
+                                    <CaseCard title={card.title} imgSrc={card.imgSrc} src={card.src} />
+                                </GridItem>
+                            ))
+                        }
                     </Grid>
                 </Flex>   
             </CardBody>
