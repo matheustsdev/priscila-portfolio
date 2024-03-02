@@ -10,9 +10,7 @@ export default function MyApp({
 }: AppProps) {
   return (
     <ChakraProvider>
-      <main className={inter.className}>
         <Component {...pageProps} />
-      </main>
     </ChakraProvider>
   )
 }
