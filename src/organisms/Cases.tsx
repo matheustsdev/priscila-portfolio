@@ -6,30 +6,36 @@ export const Cases = () => {
     const caseCards = [{
         id: "1",
         title: "Design",
-        imgSrc: "https://images.unsplash.com/photo-1634013777228-6c9b5f3b4f1a",
-        src: "https://unsplash.com/photos/4Zd3Bz9eK6s"
+        imgSrc: "/cases/design/hero.png",
+        src: "/case/design"
     },
     {   
         id: "2",
         title: "Banner",
-        imgSrc: "https://images.unsplash.com/photo-1634013777228-6c9b5f3b4f1a",
-        src: "https://unsplash.com/photos/4Zd3Bz9eK6s"
+        imgSrc: "/cases/banner/hero.png",
+        src: "/case/banner"
     },
     {
         id: "3",
         title: "Folder",
-        imgSrc: "https://images.unsplash.com/photo-1634013777228-6c9b5f3b4f1a",
-        src: "https://unsplash.com/photos/4Zd3Bz9eK6s"
+        imgSrc: "/cases/folder/hero.png",
+        src: "/case/folder"
     },
     {
         id: "4",
         title: "Criação de logo",
-        imgSrc: "https://images.unsplash.com/photo-1634013777228-6c9b5f3b4f1a",
-        src: "https://unsplash.com/photos/4Zd3Bz9eK6s"
+        imgSrc: "/cases/logo/hero.png",
+        src: "/case/logo-creation"
+    },
+    {
+        id: "5",
+        title: "Filmmaker",
+        imgSrc: "/cases/filmmaker/hero.png",
+        src: "/case/logo-creation"
     }];
 
     return (
-        <Card display="flex" w="100%" bg="gray.800" color="white" direction="column" p="2rem 6rem" borderRadius="80px 80px 0 0">
+        <Card display="flex" w="100%" bg="gray.800" color="white" direction="column" p="2rem 6rem" borderRadius="80px 80px 0 0" border="none" id="cases">
             <CardBody>
                 <Flex direction="column" align="center">
                     <Heading as="h1" size="2xl" mb="2rem">

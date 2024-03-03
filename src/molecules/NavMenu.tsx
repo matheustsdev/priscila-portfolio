@@ -13,7 +13,7 @@ export const NavMenu: React.FC<INavMenuProps> = (props) => {
             borderRadius="2rem" 
             w="60%" 
             mt="1rem"
-            p="1rem 2rem"
+            p="1rem 8rem"
             as="nav"
             flexDirection="row"
             display="flex"
@@ -24,10 +24,9 @@ export const NavMenu: React.FC<INavMenuProps> = (props) => {
             position="absolute"
             zIndex="100"
         >
-            <AppLink href="#">Home</AppLink>
-            <AppLink href="#">About</AppLink>
-            <AppLink href="#">Services</AppLink>
-            <AppLink href="#">Portfolio</AppLink>
+            <AppLink href="/#apresentation">Apresentação</AppLink>
+            <AppLink href="/#cases">Cases</AppLink>
+            <AppLink href="/#contacts">Contatos</AppLink>
         </Flex>
     )
 }
