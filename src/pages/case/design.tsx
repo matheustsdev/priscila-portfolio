@@ -37,22 +37,22 @@ const Design: React.FC = () => {
                     <Box w="100%">
                         <Slider {...settings}>
                             <div className="slideItem">
-                                <Image src="/cases/design/1.png" alt="logo" />
+                                <Image src="https://i.imgur.com/cik2Fhb.png" alt="logo" />
                             </div>
                             <div className="slideItem">
-                                <Image src="/cases/design/2.png" alt="logo" />
+                                <Image src="https://i.imgur.com/0y5kGBx.png" alt="logo" />
                             </div>
                             <div className="slideItem">
-                                <Image src="/cases/design/3.png" alt="logo" />
+                                <Image src="https://i.imgur.com/snztbb3.png" alt="logo" />
                             </div>
                             <div className="slideItem">
-                                <Image src="/cases/design/4.png" alt="logo" />
+                                <Image src="https://i.imgur.com/oD1wmjw.png" alt="logo" />
                             </div>
                             <div className="slideItem">
-                                <Image src="/cases/design/5.png" alt="logo" />
+                                <Image src="https://i.imgur.com/wUCyGnf.png" alt="logo" />
                             </div>
                             <div className="slideItem">
-                                <Image src="/cases/design/6.png" alt="logo" />
+                                <Image src="https://i.imgur.com/pQiJ9N1.png" alt="logo" />
                             </div>
                         </Slider>
                     </Box>
