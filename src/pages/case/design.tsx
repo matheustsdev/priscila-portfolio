@@ -1,7 +1,8 @@
 import { Footer } from "@/atoms/Footer";
 import { NavMenu } from "@/molecules/NavMenu";
-import { Flex, Heading, Text, Image, Box } from "@chakra-ui/react";
+import { Flex, Heading, Text, Box, Image } from "@chakra-ui/react";
 import Slider, {Settings} from "react-slick";
+// import { Image } from "@chakra-ui/next-js";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -12,9 +13,7 @@ const Design: React.FC = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         swipeToSlide: true,
-        centerPadding: "20px",
-        centerMode: true,
-        
+        centerMode: true
       };
 
     return (
@@ -25,7 +24,7 @@ const Design: React.FC = () => {
                     <Heading as="h1" size="2xl" pb="4rem">
                         Design
                     </Heading>
-                    <Image src="/cases/design/hero.png" alt="logo" w="100vw" />
+                    <Image src="/cases/design/hero.png" alt="logo"  />
                     <Flex direction="column" align="center" p="4rem 0">
                         <Heading as="h2" size="xl">
                             Sobre
@@ -37,22 +36,22 @@ const Design: React.FC = () => {
                     <Box w="100%">
                         <Slider {...settings}>
                             <div className="slideItem">
-                                <Image src="https://i.imgur.com/cik2Fhb.png" alt="logo" />
+                                <Image src="https://i.imgur.com/cik2Fhb.png" alt="logo" objectFit="cover" w="500px"/>
                             </div>
                             <div className="slideItem">
-                                <Image src="https://i.imgur.com/0y5kGBx.png" alt="logo" />
+                                <Image src="https://i.imgur.com/0y5kGBx.png" alt="logo" objectFit="cover" w="500px" />
                             </div>
                             <div className="slideItem">
-                                <Image src="https://i.imgur.com/snztbb3.png" alt="logo" />
+                                <Image src="https://i.imgur.com/snztbb3.png" alt="logo" objectFit="cover" w="500px" />
                             </div>
                             <div className="slideItem">
-                                <Image src="https://i.imgur.com/oD1wmjw.png" alt="logo" />
+                                <Image src="https://i.imgur.com/oD1wmjw.png" alt="logo" objectFit="cover" w="500px" />
                             </div>
                             <div className="slideItem">
-                                <Image src="https://i.imgur.com/wUCyGnf.png" alt="logo" />
+                                <Image src="https://i.imgur.com/wUCyGnf.png" alt="logo" objectFit="cover" w="500px" />
                             </div>
                             <div className="slideItem">
-                                <Image src="https://i.imgur.com/pQiJ9N1.png" alt="logo" />
+                                <Image src="https://i.imgur.com/pQiJ9N1.png" alt="logo" objectFit="cover" w="500px" />
                             </div>
                         </Slider>
                     </Box>

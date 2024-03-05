@@ -35,7 +35,7 @@ export const Cases = () => {
     }];
 
     return (
-        <Card display="flex" w="100%" bg="gray.800" color="white" direction="column" p="2rem 6rem" borderRadius="80px 80px 0 0" border="none" id="cases">
+        <Card display="flex" w="100%" bg="gray.800" color="white" direction="column" p="2rem 6rem" borderRadius="80px 80px 0 0" border="none" id="cases" boxShadow="none">
             <CardBody>
                 <Flex direction="column" align="center">
                     <Heading as="h1" size="2xl" mb="2rem">
