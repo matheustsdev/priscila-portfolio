@@ -6,7 +6,7 @@ export const Cases = () => {
     const caseCards = [{
         id: "1",
         title: "Design",
-        imgSrc: "https://i.imgur.com/PYo1nTV.png",
+        imgSrc: "/cases/design/hero.png",
         src: "/case/design"
     },
     {   
