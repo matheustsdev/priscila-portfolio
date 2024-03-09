@@ -35,13 +35,13 @@ export const Cases = () => {
     }];
 
     return (
-        <Card display="flex" w="100%" bg="gray.800" color="white" direction="column" p="2rem 6rem" borderRadius="80px 80px 0 0" border="none" id="cases" boxShadow="none">
+        <Card display="flex" justify="center" w="100%" bg="gray.800" color="white" direction="column" p={["1rem 0", "2rem 6rem"]} borderRadius="80px 80px 0 0" border="none" id="cases" boxShadow="none">
             <CardBody>
-                <Flex direction="column" align="center">
+                <Flex direction="column" align="center" w="100%">
                     <Heading as="h1" size="2xl" mb="2rem">
                         Cases
                     </Heading>
-                    <Grid templateColumns="repeat(2, 1fr)" gap="100px">
+                    <Grid templateColumns="repeat(auto-fill, minmax(300px,1fr))" gap="50px" w="100%">
                         {
                             caseCards.map((card) => (
                                 <GridItem key={card.id}>
