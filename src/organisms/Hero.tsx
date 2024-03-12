@@ -3,7 +3,7 @@ import { Card, CardBody, Flex, Heading, Text, Image } from "@chakra-ui/react";
 
 export const Hero: React.FC = () => {
     return (
-        <Card bg="gray.100" w="100%" h="90vh" p={["1rem 0","8rem 0"]} color="black" borderRadius={["0 0 60px 60px", "0 0 80px 80px"] } id="hero">
+        <Card bg="gray.100" w="100%" h="90vh" p={["1rem 0","8rem 0"]} color="black" borderRadius={["0 0 60px 60px", "0 0 80px 80px"]} id="hero">
             <CardBody display="flex" w="100%" alignItems="center">
                 <Flex w="100%" gap="5rem" pl={["1rem", "6rem"]} align="flex-start">
                     <Flex w={["100%","60%"]} direction="column">

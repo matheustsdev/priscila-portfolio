@@ -3,7 +3,7 @@ import { Heading, Flex, Text } from "@chakra-ui/react";
 export const Apresentation = () => {
     return (
         <Flex w="100%" align="center" color="white" direction="column" gap="2rem" p={["2rem 1rem 100px 2rem", "2rem 6rem 100px 6rem"]} id="apresentation">
-            <Heading as="h1" size={["md", "2xl"]}>
+            <Heading as="h1" size="2xl">
                 Apresentação
             </Heading>
             <Text fontSize={["sm", "unset"]}>
