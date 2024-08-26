@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <Flex align="center" justify="flex-start" direction="column" w="100vw" bg="yellow.700" overflowX="hidden"> 
-      <NavMenu />
+      {/* <NavMenu /> */}
       <Hero />
       <Apresentation />
       <Cases />

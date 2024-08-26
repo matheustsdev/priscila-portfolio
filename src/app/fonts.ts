@@ -1,6 +1,15 @@
-import { Inter } from "next/font/google";
+import { DM_Sans, Poppins } from "next/font/google";
 
-export const inter = Inter({
+export const dmSans = DM_Sans({
   subsets: ["latin"],
-  weight: ["400", "700"]
+  weight: ["400", "700"],
+  display: "swap",
+  variable: "--font-dm-sans"
+});
+
+export const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "700", "900"],
+  display: "swap",
+  variable: "--font-poppins"
 });

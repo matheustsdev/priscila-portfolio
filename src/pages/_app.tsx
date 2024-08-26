@@ -1,8 +1,7 @@
 import App, { AppContext, AppInitialProps, AppProps } from 'next/app'
 import { ChakraProvider } from "@chakra-ui/react"
-import { inter } from '@/app/fonts';
+import { theme } from "@/styles/theme";
 
-import "@/styles/globals.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -11,7 +10,7 @@ export default function MyApp({
   pageProps
 }: AppProps) {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
         <Component {...pageProps} />
     </ChakraProvider>
   )
