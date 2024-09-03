@@ -38,3 +38,13 @@ a {
     align-items: center;
     justify-content: center;
 }
+
+.phone_carousel_slider {
+    height: 880px;
+}
+
+.phone_carousel_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
