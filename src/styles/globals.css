@@ -48,3 +48,8 @@ a {
     align-items: center;
     justify-content: center;
 }
+
+.verticalText {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
